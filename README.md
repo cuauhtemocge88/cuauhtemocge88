@@ -12,22 +12,24 @@
 </p>
 
 ### 🛡️ About Me
-I'm an **Information Technology & Cloud Security Specialist** with deep practical experience architecting, deploying, and securing serverless solutions on **Google Cloud Platform (GCP)**.
+I'm an **Information Technology & Cloud Security Specialist** with practical experience architecting, deploying, and securing serverless solutions on **Google Cloud Platform (GCP)**.
 
 - 🏢 Currently modernizing industrial operations and deploying serverless applications at **Holcim**.
-- 🔐 Architect of **B2B Architech**, a Continuous Security Posture Management (CSPM) platform evaluating 10 runtime controls with 100% score.
-- ⚡ Specialized in **Zero-Trust architectures**, IAM Least Privilege, centralized secrets management via **GCP Secret Manager**, cryptographic HMAC verification, and GenAI governance (**Gemini API** Zero Data Retention).
+- 🔐 Architect of **B2B Architech**, a serverless Cloud Security Posture (CSPM) & FinOps platform on GCP with automated runtime verification and IAM least privilege.
+- ⚡ Specialized in **Zero-Trust architectures**, IAM Least Privilege, centralized secrets management via **GCP Secret Manager**, cryptographic HMAC verification, event-driven automation (**Cloud Scheduler** + **Pub/Sub**), and GenAI governance (**Gemini API** Zero Data Retention).
 - 📍 Hermosillo, Sonora, Mexico (Available for Remote / Hybrid roles).
 
 ---
 
 ### 🚀 Featured Production Projects
 
-#### 1. [B2B Architech — Continuous Security Posture & Runtime Evaluation](https://b2barchitech.com)
-*Serverless Architecture on GCP (Cloud Run, Secret Manager, Cloud Scheduler, Firestore, GCS)*
+#### 1. [B2B Architech — Continuous Security Posture, FinOps & Autonomous Agents](https://b2barchitech.com)
+*Serverless Architecture on GCP (Cloud Run, Secret Manager, Cloud Scheduler, Pub/Sub, Firestore, GCS)*
 - **Runtime Posture Verification**: Live `/api/security/posture` auditing 10 security controls in real-time. Zero-Profiling public report with granular technical audit behind strict OIDC/JWT authorization.
-- **Identity & Secret Security**: GCP Secret Manager as authoritative store; zero secrets in source code or plaintext environment variables. Restricted service account with `roles/secretmanager.secretAccessor`.
-- **Perimeter Defense**: HMAC-SHA256 Signed URLs with 72h strict TTL, `timingSafeEqual` constant-time verification, path-traversal prevention, and brute-force rate limiting.
+- **Identity & Secret Security**: GCP Secret Manager as authoritative store (9 managed secrets, zero plaintext secrets in code or env vars). Dedicated least-privilege service account (`sentinel-crew-worker-sa`) with `roles/secretmanager.secretAccessor`, `roles/datastore.user`, and `roles/binaryauthorization.policyViewer`.
+- **Perimeter Defense**: HMAC-SHA256 Signed URLs with 72h strict TTL, `timingSafeEqual` constant-time verification, path-traversal prevention, and brute-force IP rate limiting.
+- **Event-Driven Agents & FinOps**: 6-hour scheduled cycles (`Cloud Scheduler` OIDC + `Pub/Sub`) running 11 real production probes (TTFB, Lighthouse/CrUX Web Vitals, Cloud Run revisions, Firestore IAM REST, Cloud Monitoring cost estimates) with Human-in-the-Loop (HITL) governance.
+- **Automated Tech Radar → GitHub Issues**: Continuous polling of official Google Cloud Release Notes persisting approved findings to Firestore via IAM and automatically opening deduplicated engineering Issues via GitHub REST API.
 - **GenAI Governance**: Gemini API integration with `store: false` policy (Zero Data Retention for corporate training) and automated PII redaction across distributed traces (**Cloud Trace**).
 
 #### 2. [Holcim Planta Hermosillo · Operational Cloud Portal](https://holcim-portal-837199986061.us-central1.run.app/)
@@ -44,10 +46,10 @@ I'm an **Information Technology & Cloud Security Specialist** with deep practica
 
 | Domain | Technologies |
 | :--- | :--- |
-| **Cloud (GCP)** | Cloud Run, Secret Manager, Cloud Scheduler, Cloud Storage, Firestore, Cloud Logging, Cloud Trace, IAM |
+| **Cloud (GCP)** | Cloud Run, Secret Manager, Cloud Scheduler, Cloud Pub/Sub, Cloud Storage, Firestore, Cloud Logging, Cloud Trace, IAM |
 | **Security** | Zero-Trust Architecture, IAM Least Privilege, OIDC, JWT, RBAC, HMAC-SHA256, Signed URLs, HSTS Preload |
 | **Development** | Node.js, Express, JavaScript, TypeScript, React, Python, REST APIs, Git, Bash / Linux CLI |
-| **Databases & DevOps** | Firestore, MySQL, Docker, CI/CD, Serverless, TCP/IP Networking |
+| **Databases & DevOps** | Firestore, MySQL, Docker, Cloud Build, CI/CD, Serverless, GitHub API, TCP/IP Networking |
 
 ---
 
