@@ -32,11 +32,15 @@ I'm an **Information Technology & Cloud Security Specialist** with practical exp
 - **Automated Tech Radar → GitHub Issues**: Continuous polling of official Google Cloud Release Notes persisting approved findings to Firestore via IAM and automatically opening deduplicated engineering Issues via GitHub REST API.
 - **GenAI Governance**: Gemini API integration with `store: false` policy (Zero Data Retention for corporate training) and automated PII redaction across distributed traces (**Cloud Trace**).
 
-#### 2. [Holcim Planta Hermosillo · Operational Cloud Portal](https://holcim-portal-837199986061.us-central1.run.app/)
+#### 2. [Cloud Posture Monitor — DevSecOps & IaC Lab](https://github.com/cuauhtemocge88/cloud-posture-monitor)
+*Node.js, Docker Multi-Stage, Kubernetes (Helm), Terraform (AWS ECS Fargate), GitHub Actions OIDC, Trivy & Gitleaks*
+- Open-source DevSecOps reference repository demonstrating container hardening, Infrastructure as Code, keyless CI/CD via OIDC, vulnerability scanning (Trivy), and secret detection (Gitleaks).
+
+#### 3. [Holcim Planta Hermosillo · Operational Cloud Portal](https://holcim-portal-837199986061.us-central1.run.app/)
 *Serverless PWA on Google Cloud Run*
 - Digitalization of 100% of vehicular safety inspections, truck cycle times, coaching modules, and operational analytics in real time for industrial plant operations.
 
-#### 3. [ArtTech-IA — Progressive Web App on Cloud Run](https://arttech-ai-676819743861.us-east1.run.app/)
+#### 4. [ArtTech-IA — Progressive Web App on Cloud Run](https://arttech-ai-676819743861.us-east1.run.app/)
 *React, Vite, Node.js, Express, Service Workers, Google Cloud Run*
 - Decoupled serverless web application containerized and deployed on GCP Cloud Run with offline resilience via Service Workers.
 
